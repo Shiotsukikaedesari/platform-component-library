@@ -1,0 +1,10 @@
+(function() {try {
+    var elementStyle = document.createElement('style');
+    elementStyle.appendChild(document.createTextNode(".container[data-v-7cba0fb0]{width:100%!important;height:100%!important}"));
+    elementStyle.id = "";
+    document.head.appendChild(elementStyle);
+  } catch(e) {
+    console.error('vite-plugin-css-injected-by-js', e);
+  }
+})();
+(function(r,a){typeof exports=="object"&&typeof module<"u"?module.exports=a(require("@platform/el-button@0.0.2/@vis-resm/el-button")):typeof define=="function"&&define.amd?define(["@platform/el-button@0.0.2/@vis-resm/el-button"],a):(r=typeof globalThis<"u"?globalThis:r||self,r.index=a(r.ElButton))})(this,function(r){"use strict";const p=(e=>e&&typeof e=="object"&&"default"in e?e:{default:e})(r);var v=function(){var e=this,i=e.$createElement,f=e._self._c||i;return f("el-button",{staticClass:"container",style:{fontSize:e.fontSize},attrs:{icon:e.icon,loading:e.loading,type:e.type}},[e._v(e._s(e.text))])},h=[];const T="";function m(e,i,f,g,s,_,l,$){var t=typeof e=="function"?e.options:e;i&&(t.render=i,t.staticRenderFns=f,t._compiled=!0),g&&(t.functional=!0),_&&(t._scopeId="data-v-"+_);var o;if(l?(o=function(n){n=n||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,!n&&typeof __VUE_SSR_CONTEXT__<"u"&&(n=__VUE_SSR_CONTEXT__),s&&s.call(this,n),n&&n._registeredComponents&&n._registeredComponents.add(l)},t._ssrRegister=o):s&&(o=$?function(){s.call(this,(t.functional?this.parent:this).$root.$options.shadowRoot)}:s),o)if(t.functional){t._injectStyles=o;var R=t.render;t.render=function(S,c){return o.call(c),R(S,c)}}else{var d=t.beforeCreate;t.beforeCreate=d?[].concat(d,o):[o]}return{exports:e,options:t}}const y={components:{ElButton:p.default},data(){return{icon:"",loading:!1,text:"\u6309\u94AE",color:"green",type:"primary",fontSize:"12px"}},methods:{}},u={};var b=m(y,v,h,!1,C,"7cba0fb0",null,null);function C(e){for(let i in u)this[i]=u[i]}return function(){return b.exports}()});

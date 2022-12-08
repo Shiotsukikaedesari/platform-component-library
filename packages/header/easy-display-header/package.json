@@ -1,0 +1,59 @@
+{
+  "name": "@vis-resm/easy-display-header",
+  "version": "0.0.1",
+  "description": "简易展示型标题",
+  "main": "/dist/index.umd.js",
+  "module": "/dist/index.es.js",
+  "private": false,
+  "scripts": {
+    "dev": "vis-resm vue2 dev",
+    "build": "vis-resm vue2 build",
+    "preview": "vis-resm vue2 preview",
+    "lint": "eslint **/*.js **/*.vue"
+  },
+  "author": "",
+  "license": "AGPL-3.0",
+  "external": [],
+  "devDependencies": {
+    "@vis-resm/cli": "^0.0.1",
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "vue": "^2.6.14"
+  },
+  "configuration": [
+    {
+      "name": "textColor",
+      "label": "标题色",
+      "controller": "picker"
+    },
+    {
+      "name": "themeColor",
+      "label": "主题色",
+      "controller": "picker"
+    },
+    {
+      "name": "title",
+      "label": "标题文字",
+      "controller": "input"
+    },
+    {
+      "name": "titleFontSize",
+      "label": "标题尺寸",
+      "controller": "input"
+    },
+    {
+      "name": "desp",
+      "label": "副标题文字",
+      "controller": "input"
+    }
+  ]
+}

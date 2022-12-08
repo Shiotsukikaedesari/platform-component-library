@@ -1,0 +1,90 @@
+{
+  "name": "@platform/el-button",
+  "version": "0.0.2",
+  "description": "平台el-button组件",
+  "main": "/dist/index.umd.js",
+  "module": "/dist/index.es.js",
+  "private": false,
+  "scripts": {
+    "dev": "vis-resm vue2 dev",
+    "build": "vis-resm vue2 build",
+    "preview": "vis-resm vue2 preview",
+    "lint": "eslint **/*.js **/*.vue"
+  },
+  "author": "Shiotsuki_",
+  "license": "AGPL-3.0",
+  "external": [],
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@vis-resm/cli": "^0.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@vis-resm/el-button": "^0.0.5",
+    "vue": "^2.6.14"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "preivew.png",
+    "readme.md"
+  ],
+  "configuration": [
+    {
+      "name": "icon",
+      "label": "图标",
+      "controller": "input"
+    },
+    {
+      "name": "loading",
+      "label": "加载状态",
+      "controller": "switch"
+    },
+    {
+      "name": "text",
+      "label": "文字",
+      "controller": "input"
+    },
+    {
+      "name": "color",
+      "label": "背景色",
+      "controller": "picker"
+    },
+    {
+      "name": "type",
+      "label": "类型",
+      "controller": "select",
+      "options": [
+        {
+          "label": "主要",
+          "value": "primary"
+        },
+        {
+          "label": "成功",
+          "value": "success"
+        },
+        {
+          "label": "警告",
+          "value": "warning"
+        },
+        {
+          "label": "错误",
+          "value": "error"
+        }
+      ]
+    },
+    {
+      "name": "fontSize",
+      "label": "字体大小",
+      "controller": "input"
+    }
+  ]
+}
